@@ -1,0 +1,193 @@
+/* I used a soft grey background to make my content stand out from the rest of the page */
+body {
+  background: #d9d9d9;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #2f2f2f;
+}
+
+/* -----------------------
+   Fonts - I chose to use my own custom font "Neue Haas Grotesk" as I like the typeface and thought it would look very clean for my website
+----------------------- */
+
+@font-face {
+  font-family: "Neue Haas Display";
+  src: url("fonts/neuehaasgrotdisp-15xxthin-trial.otf") format("opentype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Neue Haas Display";
+  src: url("fonts/NeueHaas-Regular.woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Neue Haas Display";
+  src: url("fonts/NeueHaas-Bold.woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* -----------------------
+   Overall page layout - This section is where I defined the look of the overall page, I originally was using a 2 column layout for the website, in which
+   the images were aligned in one column and all my responses were in the opposing column. I later changed from this idea to a singular column layout as I felt the page 
+   was hard to read and not effective.
+----------------------- */
+
+.page-wrap {
+  width: 100%;
+  padding: 120px 40px;
+  display: flex;
+  justify-content: center;
+}
+/* This container controls the main reading width and creates a clean editorial frame around the content */
+.page {
+  width: 100%;
+  max-width: 980px;
+  background: #f5efef;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* -----------------------
+   Top bar - For the top bar which houses some of the basic information about my submission, I used a simple 3-column grid 
+   to organise the course info, name, and student number evenly.
+----------------------- */
+
+.topbar {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 18px 24px;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #666;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+/* This alignment ensures the middle content is centred */
+.topbar-centre {
+  text-align: center;
+}
+
+/* This seperates the student number from the rest of the information */
+.topbar-right {
+  text-align: right;
+}
+
+/* -----------------------
+   Response layout - This section helps with readability and layout of text, headings etc
+----------------------- */
+
+.blog-layout {
+  width: 100%;
+  padding: 56px 0 80px 0;
+}
+
+.intro-block {
+  max-width: 700px;
+  margin: 0 auto 56px auto;
+  padding: 0 24px;
+}
+
+/* this small caption text was done intentionally to simply introduce the project without clashing with the heading */
+.caption {
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #8d8d8d;
+  margin-bottom: 16px;
+}
+
+/* I used a large heading to create an obvious starting point for the page */
+.intro-block h1 {
+  font-size: 58px;
+  line-height: 0.95;
+  letter-spacing: -2px;
+  font-weight: 500;
+  color: #303030;
+  margin-bottom: 28px;
+}
+
+/* I used a lighter text for the intro paragraph for contrast and clarity, so it's distinctive from the heading */
+.intro-text {
+  font-family: "Neue Haas Display", Helvetica, Arial, sans-serif;
+  font-weight: 100;
+  font-size: 24px;
+  line-height: 1.4;
+  color: #444;
+  max-width: 680px;
+}
+
+/* -----------------------
+   Images - I originally was having a collage of images, but changed to keep the images full width and centred on the page to support 
+   the responses rather than overshadow them.
+----------------------- */
+
+.feature-image,
+.inline-image {
+  width: 100%;
+  margin: 0 0 56px 0;
+}
+
+.feature-image img,
+.inline-image img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+/* The purpose of the feature image is to work as a visual introduction to the website, so I wanted it to be the full width of the page */
+.feature-image img {
+  max-height: 520px;
+}
+
+/* I limited the width of other inline images so they were cohevious in size and sit more naturally */
+.inline-image {
+  max-width: 700px;
+  margin: 0 auto 56px auto;
+  padding: 0 24px;
+}
+
+/* -----------------------
+   Written content blocks - Each response is seperated into their own "content blocks" so the page is easier to 
+   read and feels more organised, especially in the code.
+----------------------- */
+
+.content-block {
+  max-width: 700px;
+  margin: 0 auto 56px auto;
+  padding: 0 24px;
+}
+
+/* These small labels help break up the responses without being too loud */
+.section-label {
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #8d8d8d;
+  margin-bottom: 14px;
+}
+
+/* I styled the response headings as italic and larger and bolder so they would stand out and because I was going for that editorial/blog
+like design for the page */
+.content-block h2 {
+  font-family: Helvetica, Arial, sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 0.98;
+  letter-spacing: -1.4px;
+  color: #a13a5d;
+  margin-bottom: 24px;
+}
+
+/* The body text is also kept large for readibility but uses a lighter font that the heading for clarity */
+.content-block p {
+  font-family: "Neue Haas Display", Helvetica, Arial, sans-serif;
+  font-weight: 100;
+  font-size: 24px;
+  line-height: 1.45;
+  color: #333;
+}
